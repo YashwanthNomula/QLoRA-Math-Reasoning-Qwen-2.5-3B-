@@ -1,0 +1,11 @@
+# Do not commit data or model artifacts
+data/
+outputs/
+conda/
+
+# Hugging Face cloned repo (separate project)
+calculus-qlora-tutor/
+
+# Python cache
+__pycache__/
+*.pyc
