@@ -1,0 +1,127 @@
+[
+  {
+    "instruction": "Differentiate sin(x^2)",
+    "expected": "Using the chain rule, let u = x^2. The derivative of sin(u) is cos(u) multiplied by du/dx, giving 2x cos(x^2).",
+    "model_output": "### Instruction:\nDifferentiate sin(x^2)\n\n### Response:\nTo differentiate the function sin(x^2), we will use the chain rule. The chain rule states that if you have a composite function, say f(g(x)), then the derivative is given by f'(g(x)) * g'(x).\n\nHere, our function is sin(u) where u = x^2.\n\nStep 1: Differentiate the outer function sin(u). The derivative of sin(u) with respect to u is cos(u).\n\nStep 2: Now, we need to find the derivative of the inner function u = x^2. The derivative of x^2 with respect to x is 2x.\n\nStep 3: Applying the chain rule, we get:\n\nd/dx [sin(x^2)] = cos(x^2) * d/dx [x^2]\n\nStep 4: Substitute the derivatives we found:\n\n= cos(x^2) * 2x\n\nStep 5: Therefore, the final result for the derivative of sin(x^2) is:\n\n2x * cos(x^2) \n\nSo, the derivative of sin(x^2) is 2x * cos(x^2)."
+  },
+  {
+    "instruction": "Differentiate e^(3x)",
+    "expected": "Using the chain rule, the derivative of e^(3x) is e^(3x) multiplied by the derivative of 3x, which is 3e^(3x).",
+    "model_output": "### Instruction:\nDifferentiate e^(3x)\n\n### Response:\nTo differentiate the function e^(3x), we will use the chain rule. The chain rule states that if you have a composite function, say f(g(x)), then the derivative is given by f'(g(x)) * g'(x).\n\nHere, our function is e^(3x). We can identify the outer function as e^u and the inner function as u = 3x.\n\n1. Differentiate the outer function with respect to u: \n   d/dx(e^u) = e^u.\n\n2. Now, differentiate the inner function with respect to x: \n   d/dx(3x) = 3.\n\n3. Applying the chain rule, we get:\n   d/dx(e^(3x)) = e^(3x) * 3.\n\n4. Simplifying this, we obtain:\n   d/dx(e^(3x)) = 3e^(3x).\n\nThus, the derivative of e^(3x) is 3e^(3x)."
+  },
+  {
+    "instruction": "Differentiate ln(x^2 + 1)",
+    "expected": "Using the chain rule, the derivative of ln(x^2 + 1) is (1 / (x^2 + 1)) multiplied by 2x, resulting in 2x / (x^2 + 1).",
+    "model_output": "### Instruction:\nDifferentiate ln(x^2 + 1)\n\n### Response:\nTo differentiate the function ln(x^2 + 1), we will use the chain rule. The chain rule states that if you have a composite function f(g(x)), then the derivative is given by f'(g(x)) * g'(x).\n\nStep 1: Identify the outer function and the inner function.\nThe outer function is ln(u) where u = x^2 + 1.\n\nStep 2: Differentiate the outer function with respect to u.\nThe derivative of ln(u) is 1/u.\n\nStep 3: Differentiate the inner function with respect to x.\nThe derivative of x^2 + 1 is 2x.\n\nStep 4: Apply the chain rule.\nNow, we multiply the derivative of the outer function by the derivative of the inner function:\nd/dx [ln(x^2 + 1)] = (1/(x^2 + 1)) * (2x).\n\nStep 5: Simplify the expression.\nThis gives us:\nd/dx [ln(x^2 + 1)] = 2x / (x^2 + 1).\n\nThus, the derivative of ln(x^2 + 1) is:\n2x / (x^2 + 1)."
+  },
+  {
+    "instruction": "Differentiate x^4",
+    "expected": "The derivative of x^4 with respect to x is 4x^3.",
+    "model_output": "### Instruction:\nDifferentiate x^4\n\n### Response:\nTo differentiate the function x^4, we will use the power rule of differentiation. The power rule states that if f(x) = x^n, then f'(x) = n * x^(n-1).\n\nStep 1: Identify the exponent of x in the function x^4. Here, the exponent is 4.\n\nStep 2: Apply the power rule. According to the power rule, we multiply the exponent by the coefficient (which is 1 in this case) and then decrease the exponent by 1.\n\nSo, we have:\nf'(x) = 4 * x^(4-1)\n\nStep 3: Simplify the expression.\nf'(x) = 4 * x^3\n\nThus, the derivative of x^4 is 4x^3. \n\nFinal answer: The derivative of x^4 is 4x^3."
+  },
+  {
+    "instruction": "Differentiate cos(x)",
+    "expected": "The derivative of cos(x) with respect to x is -sin(x).",
+    "model_output": "### Instruction:\nDifferentiate cos(x)\n\n### Response:\nTo differentiate the function cos(x), we will use the basic differentiation rule for cosine. \n\n1. Recall that the derivative of cos(x) is -sin(x). This means that if we have a function f(x) = cos(x), then its derivative f'(x) can be found using this rule.\n\n2. Applying the rule, we get:\n   f'(x) = -sin(x).\n\n3. Therefore, the derivative of cos(x) is -sin(x).\n\nFinal answer: The derivative of cos(x) is -sin(x)."
+  },
+  {
+    "instruction": "Differentiate tan(x)",
+    "expected": "The derivative of tan(x) with respect to x is sec^2(x).",
+    "model_output": "### Instruction:\nDifferentiate tan(x)\n\n### Response:\nTo differentiate the function tan(x), we will use the definition of the derivative and some trigonometric identities.\n\n1. Start with the definition of the derivative:\n   f'(x) = lim(h\u21920) [f(x+h) - f(x)] / h\n\n2. For our function f(x) = tan(x), we have:\n   f(x+h) = tan(x + h)\n\n3. Using the tangent addition formula, we know that:\n   tan(x + h) = (tan(x) + tan(h)) / (1 - tan(x)tan(h))\n\n4. Now substitute this into the limit:\n   f'(x) = lim(h\u21920) [((tan(x) + tan(h)) / (1 - tan(x)tan(h))) - tan(x)] / h\n\n5. Simplify the numerator:\n   = lim(h\u21920) [(tan(x) + tan(h) - tan(x)(1 - tan(x)tan(h)))] / [h(1 - tan(x)tan(h))]\n   = lim(h\u21920) [(tan(x) + tan(h) - tan(x) + tan^2(x)tan(h))] / [h(1 - tan(x)tan(h))]\n   = lim(h\u21920) [tan(h) + tan^2(x)tan(h)] / [h(1 - tan(x)tan(h))]\n\n6. Factor out tan(h) from the numerator:\n   = lim(h\u2192"
+  },
+  {
+    "instruction": "Integrate 2x",
+    "expected": "The integral of 2x with respect to x is x^2 + C.",
+    "model_output": "### Instruction:\nIntegrate 2x\n\n### Response:\nTo integrate the function 2x, we follow these steps:\n\n1. Identify the integral: We need to find \u222b2x dx.\n\n2. Apply the power rule of integration: The power rule states that \u222bx^n dx = (x^(n+1))/(n+1) + C, where n is a constant and C is the constant of integration.\n\n3. In our case, n = 1 because we have 2x, which can be written as 2x^1. Applying the power rule:\n   \u222b2x dx = 2\u222bx^1 dx = 2 * (x^(1+1))/(1+1) + C = 2 * (x^2)/2 + C.\n\n4. Simplify the expression: \n   2 * (x^2)/2 simplifies to x^2.\n\n5. Therefore, the integral of 2x is:\n   \u222b2x dx = x^2 + C.\n\nSo, the final answer is x^2 + C, where C is the constant of integration."
+  },
+  {
+    "instruction": "Integrate x^2",
+    "expected": "The integral of x^2 with respect to x is x^3/3 + C.",
+    "model_output": "### Instruction:\nIntegrate x^2\n\n### Response:\nTo integrate x^2, we will use the power rule for integration. The power rule states that the integral of x^n is (x^(n+1))/(n+1) + C, where n is a constant and C is the constant of integration.\n\nStep 1: Identify the function to be integrated.\nThe function is x^2.\n\nStep 2: Apply the power rule.\nAccording to the power rule, we need to increase the exponent by one and then divide by the new exponent.\n\nSo, for x^2:\n- Increase the exponent from 2 to 3.\n- Divide by 3.\n\nThis gives us:\n\u222bx^2 dx = (x^(2+1))/(2+1) + C\n= (x^3)/3 + C\n\nStep 3: Write the final result.\nThe integral of x^2 is (x^3)/3 + C.\n\nThus, the final answer is:\n\u222bx^2 dx = (x^3)/3 + C."
+  },
+  {
+    "instruction": "Integrate cos(x)",
+    "expected": "The integral of cos(x) with respect to x is sin(x) + C.",
+    "model_output": "### Instruction:\nIntegrate cos(x)\n\n### Response:\nTo integrate cos(x), we follow these steps:\n\n1. Recall the integral formula for cosine: \n   \u222bcos(x) dx = sin(x) + C, where C is the constant of integration.\n\n2. Begin by applying the formula directly:\n   \u222bcos(x) dx = sin(x) + C.\n\n3. To verify this result, we can differentiate sin(x):\n   d/dx [sin(x)] = cos(x).\n\n4. Since differentiating our antiderivative gives us back the original function, we confirm that our integral is correct.\n\nThus, the final answer is:\n\u222bcos(x) dx = sin(x) + C. \n\nThis completes the integration of cos(x)."
+  },
+  {
+    "instruction": "Integrate e^x",
+    "expected": "The integral of e^x with respect to x is e^x + C.",
+    "model_output": "### Instruction:\nIntegrate e^x\n\n### Response:\nTo integrate the function e^x, we follow these steps:\n\n1. Recall that the integral of e^x is itself. This means that the antiderivative of e^x is e^x + C, where C is the constant of integration.\n\n2. Write down the integral: \u222be^x dx.\n\n3. Apply the rule for integrating e^x: \u222be^x dx = e^x + C.\n\n4. Therefore, the final result of the integral is e^x + C.\n\nIn conclusion, the integral of e^x is e^x + C."
+  },
+  {
+    "instruction": "Explain the chain rule step by step",
+    "expected": "The chain rule is used to differentiate composite functions. Identify the inner and outer functions, differentiate the outer function, and multiply by the derivative of the inner function.",
+    "model_output": "### Instruction:\nExplain the chain rule step by step\n\n### Response:\nThe chain rule is a fundamental concept in calculus used to find the derivative of composite functions. A composite function is formed when one function is nested inside another. Let's break down the chain rule into steps:\n\n1. **Identify the Composite Function**: Suppose we have a composite function f(g(x)). Here, g(x) is the inner function and f(u) is the outer function where u = g(x).\n\n2. **Differentiate the Outer Function**: First, we differentiate the outer function f with respect to its variable u. This gives us f'(u).\n\n3. **Differentiate the Inner Function**: Next, we differentiate the inner function g with respect to x. This gives us g'(x).\n\n4. **Apply the Chain Rule**: The chain rule states that the derivative of the composite function f(g(x)) is given by the product of the derivatives of the outer and inner functions. Mathematically, this is expressed as:\n   f'(g(x)) = f'(u) * g'(x), where u = g(x).\n\n5. **Substitute Back**: To make it clear, substitute back the original variables. If we let y = g(x), then the chain rule becomes:\n   dy/dx = f'(y) * g'(x).\n\n6. **Example**: Consider the function h(x) = (3x^2 + 2)^4. Here, we can identify the outer function f(u) = u^4 and the inner function"
+  },
+  {
+    "instruction": "Explain what a derivative represents",
+    "expected": "A derivative represents the rate of change of a function with respect to a variable and can be interpreted as the slope of the tangent line.",
+    "model_output": "### Instruction:\nExplain what a derivative represents\n\n### Response:\nA derivative in calculus represents the instantaneous rate of change of a function at a particular point. It can be thought of as the slope of the tangent line to the curve of the function at that point.\n\nTo break it down further:\n\n1. **Function**: Consider a function f(x), which maps each input x to an output f(x).\n\n2. **Instantaneous Rate of Change**: The derivative f'(x) gives us the exact speed at which the function's value changes as we move along the x-axis. This is crucial for understanding how quickly or slowly the function is changing at any specific point.\n\n3. **Tangent Line**: At any point on the graph of f(x), there is a tangent line that touches the curve at that point but does not cross it. The slope of this tangent line is precisely the derivative f'(x) at that point.\n\n4. **Example**: Suppose we have a function f(x) = x^2. To find the derivative, we use the power rule: f'(x) = 2x. This tells us that at any point x, the slope of the tangent line to the curve y = x^2 is 2x.\n\n5. **Interpretation**: If we are looking at the position of a moving object over time (where x represents time and f(x) represents position), then f'(x) would give us the velocity of the object at any given moment.\n\nIn summary, derivatives provide a powerful tool for analyzing"
+  },
+  {
+    "instruction": "Explain what an integral represents",
+    "expected": "An integral represents the accumulation of quantities and can be interpreted as the area under a curve.",
+    "model_output": "### Instruction:\nExplain what an integral represents\n\n### Response:\nAn integral is a fundamental concept in calculus that can be used to find the area under a curve, calculate volumes of solids, and solve various problems involving accumulation. There are two main types of integrals: definite and indefinite.\n\n1. **Indefinite Integral**: An indefinite integral of a function f(x) is represented as \u222bf(x)dx and gives us a family of functions F(x) such that F'(x) = f(x). The result of an indefinite integral includes a constant of integration, denoted by C, because the derivative of any constant is zero. This means that there are infinitely many antiderivatives for any given function.\n\n2. **Definite Integral**: A definite integral of a function f(x) from a to b is written as \u222b_a^b f(x)dx and represents the signed area between the graph of f(x), the x-axis, and the vertical lines at x = a and x = b. The value of this integral can be found using the Fundamental Theorem of Calculus, which states that if F is an antiderivative of f, then \u222b_a^b f(x)dx = F(b) - F(a).\n\nIn summary, integrals allow us to compute areas, volumes, and other quantities that involve accumulation over a range of values. They are essential tools in many fields of science and engineering."
+  },
+  {
+    "instruction": "What is the derivative of x^3?",
+    "expected": "The derivative of x^3 with respect to x is 3x^2.",
+    "model_output": "### Instruction:\nWhat is the derivative of x^3?\n\n### Response:\nTo find the derivative of the function f(x) = x^3, we will use the power rule of differentiation. The power rule states that if f(x) = x^n, then the derivative f'(x) = n * x^(n-1).\n\nStep 1: Identify the exponent of x in the function. Here, the exponent is 3.\n\nStep 2: Apply the power rule. According to the power rule, we multiply the exponent by the coefficient (which is 1 for x^3) and then decrease the exponent by 1.\n\nSo, we have:\nf'(x) = 3 * x^(3-1)\n\nStep 3: Simplify the expression.\nf'(x) = 3 * x^2\n\nThus, the derivative of x^3 is 3x^2. \n\nFinal answer: The derivative of x^3 is 3x^2."
+  },
+  {
+    "instruction": "What is the derivative of 1/x?",
+    "expected": "The derivative of 1/x is -1/x^2.",
+    "model_output": "### Instruction:\nWhat is the derivative of 1/x?\n\n### Response:\nTo find the derivative of the function f(x) = 1/x, we can use the power rule for differentiation.\n\nStep 1: Rewrite the function using negative exponents. \nWe know that 1/x can be written as x^(-1).\n\nStep 2: Apply the power rule.\nThe power rule states that if f(x) = x^n, then f'(x) = n * x^(n-1). \n\nIn our case, n = -1.\n\nStep 3: Differentiate.\nUsing the power rule:\nf'(x) = -1 * x^(-1-1) = -1 * x^(-2).\n\nStep 4: Simplify the expression.\nWe can rewrite x^(-2) as 1/x^2.\n\nThus, the derivative of 1/x is:\nf'(x) = -1/x^2.\n\nFinal answer: The derivative of 1/x is -1/x^2."
+  },
+  {
+    "instruction": "Differentiate sqrt(x)",
+    "expected": "The derivative of sqrt(x) is 1/(2sqrt(x)).",
+    "model_output": "### Instruction:\nDifferentiate sqrt(x)\n\n### Response:\nTo differentiate the function f(x) = \u221ax, we can start by rewriting it using exponents. \n\n1. Rewrite the square root as a power: \n   f(x) = x^(1/2).\n\n2. Now apply the power rule of differentiation, which states that if f(x) = x^n, then f'(x) = n * x^(n-1). Here, n = 1/2.\n\n3. Differentiate: \n   f'(x) = (1/2) * x^((1/2) - 1).\n   \n4. Simplify the exponent: \n   (1/2) - 1 = (1/2) - (2/2) = - (1/2).\n\n5. Thus, we have:\n   f'(x) = (1/2) * x^(-1/2).\n\n6. Finally, rewrite the expression in terms of a square root:\n   f'(x) = (1/2) * (1/sqrt(x)).\n\nTherefore, the derivative of \u221ax is:\nf'(x) = (1/2) / \u221ax."
+  },
+  {
+    "instruction": "Differentiate ln(x)",
+    "expected": "The derivative of ln(x) with respect to x is 1/x.",
+    "model_output": "### Instruction:\nDifferentiate ln(x)\n\n### Response:\nTo differentiate the function ln(x), we will use the rules of differentiation.\n\n1. Recall that the derivative of a natural logarithm function, ln(u), where u is a function of x, can be found using the chain rule.\n2. The chain rule states that if y = ln(u), then dy/dx = (1/u) * du/dx.\n3. In our case, let u = x. Therefore, we have y = ln(x).\n4. Now, we need to find du/dx. Since u = x, du/dx = 1.\n5. Applying the chain rule, we get:\n   dy/dx = (1/x) * (du/dx)\n        = (1/x) * 1\n        = 1/x.\n6. Thus, the derivative of ln(x) with respect to x is 1/x.\n\nFinal answer: The derivative of ln(x) is 1/x."
+  },
+  {
+    "instruction": "Integrate 1/x",
+    "expected": "The integral of 1/x with respect to x is ln|x| + C.",
+    "model_output": "### Instruction:\nIntegrate 1/x\n\n### Response:\nTo integrate the function 1/x, we follow these steps:\n\n1. **Identify the integral**: We need to find the indefinite integral of 1/x with respect to x. This can be written as \u222b(1/x) dx.\n\n2. **Use the natural logarithm rule**: There is a standard result in calculus that states that the integral of 1/x is the natural logarithm of the absolute value of x. Mathematically, this is expressed as:\n   \u222b(1/x) dx = ln|x| + C,\n   where C is the constant of integration.\n\n3. **Write the final answer**: Therefore, the integral of 1/x is:\n   \u222b(1/x) dx = ln|x| + C.\n\nThis means that the antiderivative of 1/x is the natural logarithm of the absolute value of x plus a constant. \n\nIn summary, the integral of 1/x is ln|x| + C."
+  },
+  {
+    "instruction": "Differentiate sin(3x)",
+    "expected": "Using the chain rule, the derivative of sin(3x) is cos(3x) multiplied by 3, giving 3cos(3x).",
+    "model_output": "### Instruction:\nDifferentiate sin(3x)\n\n### Response:\nTo differentiate the function sin(3x), we will use the chain rule. The chain rule states that if you have a composite function, say f(g(x)), then the derivative is given by f'(g(x)) * g'(x).\n\nHere, our function is sin(3x). We can identify the outer function as sin(u) and the inner function as u = 3x.\n\n1. Differentiate the outer function: The derivative of sin(u) with respect to u is cos(u).\n2. Differentiate the inner function: The derivative of 3x with respect to x is 3.\n3. Apply the chain rule: Now we multiply the derivatives from steps 1 and 2. So, the derivative of sin(3x) is cos(3x) * 3.\n\nPutting it all together, we get:\n\nd/dx [sin(3x)] = 3cos(3x).\n\nThus, the final answer is:\n\n3cos(3x)."
+  },
+  {
+    "instruction": "Differentiate (x^2 + 1)^3",
+    "expected": "Using the chain rule, the derivative is 3(x^2 + 1)^2 multiplied by 2x, resulting in 6x(x^2 + 1)^2.",
+    "model_output": "### Instruction:\nDifferentiate (x^2 + 1)^3\n\n### Response:\nTo differentiate the function (x^2 + 1)^3, we will use the chain rule. The chain rule states that if you have a composite function f(g(x)), then the derivative is given by f'(g(x)) * g'(x).\n\nStep 1: Identify the outer function and the inner function.\nThe outer function is f(u) = u^3, where u = x^2 + 1.\nThe inner function is g(x) = x^2 + 1.\n\nStep 2: Differentiate the outer function with respect to u.\nf'(u) = 3u^2.\n\nStep 3: Differentiate the inner function with respect to x.\ng'(x) = 2x.\n\nStep 4: Apply the chain rule.\nNow we multiply the derivatives: \nf'(g(x)) * g'(x) = 3(x^2 + 1)^2 * 2x.\n\nStep 5: Simplify the expression.\nThis gives us:\n6x(x^2 + 1)^2.\n\nThus, the derivative of (x^2 + 1)^3 is 6x(x^2 + 1)^2."
+  },
+  {
+    "instruction": "Explain the power rule",
+    "expected": "The power rule states that the derivative of x^n is n*x^(n-1).",
+    "model_output": "### Instruction:\nExplain the power rule\n\n### Response:\nThe power rule is a fundamental principle in calculus used to find the derivative of functions that are expressed as powers of x. It states that if you have a function f(x) = x^n, where n is any real number, then the derivative of this function can be found using the following formula:\n\nf'(x) = n * x^(n-1)\n\nHere's a step-by-step explanation of how to apply the power rule:\n\n1. Identify the function: Start with a function that is a power of x, such as f(x) = x^3.\n\n2. Apply the power rule: According to the power rule, take the exponent (in this case, 3), multiply it by the coefficient (which is 1 for x^3), and then decrease the exponent by 1. So, we get:\n\n   f'(x) = 3 * x^(3-1) = 3 * x^2.\n\n3. Simplify: In this example, there's no need for further simplification since the coefficient is already 3.\n\n4. Verify: To ensure accuracy, you can use the definition of the derivative or check your result by differentiating the original function directly.\n\nIn summary, the power rule provides a quick method to differentiate functions of the form x^n, making it an essential tool in calculus."
+  },
+  {
+    "instruction": "Explain the product rule",
+    "expected": "The product rule states that the derivative of f(x)g(x) is f'(x)g(x) + f(x)g'(x).",
+    "model_output": "### Instruction:\nExplain the product rule\n\n### Response:\nThe product rule is a fundamental formula in calculus used to find the derivative of a function that is the product of two other functions. It states that if you have a function f(x) which can be written as the product of two functions, say u(x) and v(x), then the derivative of f(x) with respect to x is given by:\n\nf'(x) = u(x)v'(x) + u'(x)v(x)\n\nHere's a step-by-step explanation:\n\n1. **Identify the Functions**: Let's say we have two functions, u(x) and v(x). We want to find the derivative of their product, f(x) = u(x)v(x).\n\n2. **Apply the Product Rule**: According to the product rule, the derivative of f(x) is calculated as follows:\n   - The first term is u(x) times the derivative of v(x): u(x)v'(x).\n   - The second term is the derivative of u(x) times v(x): u'(x)v(x).\n\n3. **Combine the Terms**: Therefore, we write:\n   f'(x) = u(x)v'(x) + u'(x)v(x).\n\n4. **Example**: Suppose we have the function f(x) = x^2 * e^x. Here, u(x) = x^2 and v(x) = e^x.\n   - First, find the derivatives: u'(x) = 2x and v'(x)"
+  },
+  {
+    "instruction": "Explain the quotient rule",
+    "expected": "The quotient rule states that the derivative of f(x)/g(x) is (f'(x)g(x) - f(x)g'(x)) / g(x)^2.",
+    "model_output": "### Instruction:\nExplain the quotient rule\n\n### Response:\nThe quotient rule is a formula used in calculus to find the derivative of a function that is the quotient of two other functions. It states that if you have a function f(x) defined as:\n\nf(x) = g(x) / h(x)\n\nwhere both g and h are differentiable functions, then the derivative f'(x) can be found using the quotient rule:\n\nf'(x) = (g'(x) * h(x) - g(x) * h'(x)) / (h(x))^2\n\nHere's a step-by-step breakdown of how to apply the quotient rule:\n\n1. Identify the numerator function g(x) and the denominator function h(x).\n2. Find the derivatives of g(x) and h(x), denoted as g'(x) and h'(x), respectively.\n3. Substitute these into the quotient rule formula.\n\nLet's illustrate this with an example:\n\nSuppose we want to differentiate the function f(x) = (3x^2 + 2) / (x - 1).\n\nStep 1: Here, g(x) = 3x^2 + 2 and h(x) = x - 1.\n\nStep 2: Calculate the derivatives:\ng'(x) = 6x\nh'(x) = 1\n\nStep 3: Apply the quotient rule:\n\nf'(x) = (g'(x) * h(x) - g(x) * h'(x)) / (h(x))^2"
+  },
+  {
+    "instruction": "Differentiate x^2 sin(x)",
+    "expected": "Using the product rule, the derivative is 2x sin(x) + x^2 cos(x).",
+    "model_output": "### Instruction:\nDifferentiate x^2 sin(x)\n\n### Response:\nTo differentiate the function f(x) = x^2 sin(x), we will use the product rule. The product rule states that if you have a function of the form u(x)v(x), then the derivative is given by:\n\nf'(x) = u'(x)v(x) + u(x)v'(x).\n\nHere, let u(x) = x^2 and v(x) = sin(x). \n\nFirst, we find the derivatives of u(x) and v(x):\n\nu'(x) = 2x (using the power rule)\nv'(x) = cos(x) (the derivative of sin(x))\n\nNow, applying the product rule:\n\nf'(x) = u'(x)v(x) + u(x)v'(x)\n       = (2x)(sin(x)) + (x^2)(cos(x))\n       = 2x sin(x) + x^2 cos(x).\n\nThus, the derivative of x^2 sin(x) is:\n\nf'(x) = 2x sin(x) + x^2 cos(x)."
+  },
+  {
+    "instruction": "Differentiate (x+1)/(x-1)",
+    "expected": "Using the quotient rule, the derivative is ((x-1)*1 - (x+1)*1)/(x-1)^2, which simplifies to -2/(x-1)^2.",
+    "model_output": "### Instruction:\nDifferentiate (x+1)/(x-1)\n\n### Response:\nTo differentiate the function f(x) = (x+1)/(x-1), we will use the quotient rule. The quotient rule states that if you have a function f(x) = g(x)/h(x), then the derivative f'(x) is given by:\n\nf'(x) = [g'(x) * h(x) - g(x) * h'(x)] / [h(x)]^2\n\nHere, we can identify:\ng(x) = x + 1\nh(x) = x - 1\n\nFirst, we find the derivatives of g(x) and h(x):\ng'(x) = 1\nh'(x) = 1\n\nNow, applying the quotient rule:\n\nf'(x) = [g'(x) * h(x) - g(x) * h'(x)] / [h(x)]^2\n       = [1 * (x - 1) - (x + 1) * 1] / (x - 1)^2\n\nSimplify the numerator:\n\n= [(x - 1) - (x + 1)]\n= x - 1 - x - 1\n= -2\n\nSo now we have:\n\nf'(x) = (-2) / (x - 1)^2\n\nThus, the derivative of the function (x+1)/(x-1) is:\n\nf'(x) = -2 / (x - 1)^2."
+  }
+]
