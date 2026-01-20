@@ -41,7 +41,7 @@ for _ in tqdm(range(TARGET_SAMPLES)):
             max_output_tokens=500,
         )
 
-        # ✅ THIS IS THE KEY LINE
+    
         text = response.output_text.strip()
 
         if "Instruction:" not in text or "Response:" not in text:
